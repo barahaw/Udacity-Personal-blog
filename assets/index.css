@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+.oswald-regular {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+header .name {
+  font-size: 24px;
+}
+
+header nav {
+  display: flex;
+}
+header img {
+  border-radius: 90px;
+}
+
+header nav .nav-info a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.about-me {
+  font-weight: bold;
+}
+.about-me,
+.skills,
+.projects,
+.contact {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.skills-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-info span {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card p {
+  font-weight: bold;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.contact .text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact .input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.contact .input-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact .input-form input,
+.contact .input-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact .input-form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+}
+
+footer nav ul.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer nav ul.social-media li {
+  display: inline;
+}
+
+footer nav ul.social-media li img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+footer nav ul.social-media li img:hover {
+  transform: scale(1.1);
+}
+
+footer span p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+@media (max-width: 600px) {
+  footer {
+    padding: 10px;
+  }
+
+  footer nav ul.social-media {
+    gap: 10px;
+  }
+
+  footer span p {
+    font-size: 12px;
+  }
+}
