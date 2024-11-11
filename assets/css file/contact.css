@@ -34,3 +34,33 @@
   cursor: pointer;
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .contact .text {
+    font-size: 20px;
+  }
+
+  .contact .input-form {
+    max-width: 100%;
+    gap: 5px;
+  }
+
+  .contact .input-form label {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact .text {
+    font-size: 18px;
+  }
+
+  .contact .input-form {
+    max-width: 100%;
+    gap: 5px;
+  }
+
+  .contact .input-form label {
+    margin-top: 5px;
+  }
+}
