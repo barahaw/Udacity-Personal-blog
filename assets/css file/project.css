@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import "printstyle.css" print;
+@import "mobstyle.css" screen and (max-width: 768px);
 
 .cards {
   display: grid;

@@ -1,0 +1,44 @@
+header,
+footer,
+nav,
+.no-print {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12pt;
+}
+
+body,
+.card,
+.contact {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.cards {
+  display: block;
+}
+
+.card {
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+}
